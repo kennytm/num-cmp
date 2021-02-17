@@ -1,11 +1,13 @@
-# num-cmp
+# numcmp
 
-The **[`NumCmp`](https://docs.rs/num-cmp/*/num_cmp/trait.NumCmp.html)** trait for comparison between differently typed numbers.
+> *This crate is a fork of [`num-cmp`](https://crates.io/crates/num-cmp/) but with stable i128 support.*
+
+The **[`NumCmp`](https://docs.rs/numcmp/*/numcmp/trait.NumCmp.html)** trait for comparison between differently typed numbers.
 
 ```rust
 use std::f32;
 use std::cmp::Ordering;
-use num_cmp::NumCmp;
+use numcmp::NumCmp;
 
 assert!(NumCmp::num_eq(3u64, 3.0f32));
 assert!(NumCmp::num_lt(-4.7f64, -4i8));
